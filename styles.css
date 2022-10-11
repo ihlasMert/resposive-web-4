@@ -41,15 +41,15 @@ section {
   width: 0%;
   height: 100%;
   background: var(--red);
-  transition: .3s linear;
+  transition: 0.3s linear;
   z-index: -1;
 }
-.btn:hover::before{
-    width: 100%;
-    left: 0;
+.btn:hover::before {
+  width: 100%;
+  left: 0;
 }
-.btn:hover{
-    color: #fff;
+.btn:hover {
+  color: #fff;
 }
 html {
   font-size: 62.5%;
@@ -106,6 +106,9 @@ header .navbar a:hover {
     font-size: 55%;
   }
   header {
+    padding: 2rem;
+  }
+  section {
     padding: 2rem;
   }
 }
@@ -180,4 +183,73 @@ header .navbar a:hover {
   font-size: 1.7rem;
   color: #333;
   padding: 1rem 0;
+}
+
+/*  */
+
+.heading {
+font-size: 3.5rem;
+text-align: center;
+margin-left: 5%;
+
+}
+
+.heading span {
+  color: var(--red);
+}
+.speciality,
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.speciality,
+.box-container,
+.box {
+  flex: 1 1 30rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+.image2 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -110%;
+  left: 0;
+}
+
+.box-container .box,
+.content {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+}
+
+/*   */
+img {
+  margin: 1.5rem 0;
+}
+
+.content h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.content,
+p {
+  font-size: 1.6rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+.speciality .box-container .box:hover .image2{
+    top: 0;
+
+}
+.speciality .box-container .box:hover .content{
+    transform: translateY(100% );
 }
